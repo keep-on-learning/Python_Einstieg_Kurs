@@ -17,6 +17,164 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <h1>Python Einstieg</h1>
+
+        <h2>Einleitung</h2>
+            Die Programmiersprache Python erfreut sich zunehmender Beliebtheit. Bekannt wurde
+            die bereits in den 90er Jahren entwickelte Sprache insbesondere im Zusammenhang mit
+            dem Raspbery PI (das „PI“ steht für „Python Interpreter“) sowie durch die zunehmen-
+            de Bedeutung der Sprache im Bereich Machine Learning. Die Pakete Pandas, NumPy,
+            Scikit-learn und TensorFlow erweitern den Sprachumfang von Python für diesen Ein-
+            satzbereich erheblich.
+            Der Name der Programmiersprache bezieht sich auf die englische Komikergruppe Mon-
+            ty Python, die insbesondere in den 70er Jahren durch die Fernsehserie Flying Circus oder
+            auch durch Kinofilme wie Das Leben des Brian, Ritter der Kokosnuss oder Sinn des Le-
+            bens bekannt wurden1.
+            Python ist vor allem aufgrund eines gut lesbaren und strukturierten Quellcode bei
+            vielen Entwicklern beliebt. Im Gegensatz z.B. zu C oder Java verzichtet Python zum
+            Beispiel auf die Verwendung von geschweiften Klammern, um Blöcke zu definieren. Statt-
+            dessen wird in Python auf Einrückungen zurückgegriffen. Das zwingt den Programmierer
+            zu einer übersichtlichen Formatierung des Codes.
+            Die aktuelle Version, die auch in diesem Skript verwendet wird, ist Python 3. Diese
+            Version ist nicht abwärtskompatibel zu älteren Versionen! Konkret wird in diesem Skript
+            die Version 3.8 verwendet.
+
+            >>> BILD
+
+            In Python werden Datentypen dynamisch zugewiesen (dynamische Typisierung). Eine
+            explizite Typisierung wie in Java gibt es somit nicht.
+            Python unterstützt die Objektorientierung, erlaubt aber auch die „klassische“ pro-
+            zedurale Programmierung. Sie wird deshalb auch als eine Multiparadigmensprache be-
+            zeichnet, was bisweilen auch für Kritik an der Sprache sorgt. Anders als Java zwingt
+            Python den Programmierer also nicht, objektorientiert zu programmieren.
+            Dieses Skript stellt die wichtigsten Grundkonzepte der Sprache vor, kann aber wie üb-
+            lich nicht auf alle Aspekte der Sprache eingehen. Ich verweise auf die vielfältige Literatur.
+            Einige Buchtipps finden Sie am Ende des Skripts.
+            Dieses Skript soll auch keine Einführung in das allgemeine Programmieren darstellen.
+            Es werden also bereits Grundkenntnisse wie das Verwenden von Verzweigungen, Schleifen
+            etc. vorausgesetzt.
+            Zu den Kaptiteln dieses Skripts gibt es jeweils ergänzende Videos auf der Siemens-
+            Videoplattform https://web.microsoftstream.com/. Die Playlist ist unter folgender
+            URL erreichbar (im Siemens-Intranet oder auch im Internet nach Authentifizierung):
+            https://web.microsoftstream.com/channel/8ec05b28-8050-4a93-962b-6366a16bf5bf
+        <h2>Entwicklungsumgebung</h2>
+            Es gibt viele IDEs1für Python, z.B. Sublime, PyCharm, Visual Studio Code oder auch Id-
+            le (übrigens eine Referenz auf Eric Idle, einem Mitglied von Monty Python). Im Rahmen
+            der Schulung werden wir die IDE Spyder verwenden. Sie ist bereits Bestandteil von Ana-
+            conda, das als Installationspaket auf unseren Schulungsrechnern im Softwarecenter zur
+            Verfügung steht. Falls man Anaconda direkt installieren möchte, kann das Installations-
+            programm auf https://www.anaconda.com heruntergeladen werden. Für die Installation
+            benötigt man allerdings lokale Administrationsrechte. Nach der Installation und dem
+            Start von Anaconda kann auch Spyder gestartet werden, indem man auf Launch klickt
+            (siehe Abb. 2.1).
+            
+            >>> BILD
+
+            Spyder startet man entweder durch Klick auf die Kachel in der Anaconda-Umgebung,
+            über das Startmenü oder direkt in der Kommandozeile durch Eingabe von spyder. Auf
+            Windows-PCs startet man hierzu die Anaconda Powershell Prompt und gibt dort spyder
+            ein und drückt die Enter-Taste. Auf Linux- oder Mac-Systemen öffnet man ein Terminal-
+            Fenster und verfährt dort analog. Nach dem Starten von Spyder sieht die Oberfläche in
+            etwa so aus, wie in Abbildung 2.2 gezeigt.
+
+            >>> BILD
+
+            In dem linken Fenster wird der Python-Quellcode eingegeben. Im rechten unteren
+            Fenster sehen wir die Konsole, wo die Ausgaben unseres Programms erfolgen oder wo
+            wir auch einzelne Python-Befehle direkt eingeben können.
+            Installiert man nicht Anaconda sondern ausschließlich Python, dem steht nach der
+            Installation die IDE Idle2 zur Verfügung (Abb. 2.3). In Idle auf File → New klicken, den
+            Python-Quellcode eingeben, Datei speichern und die Taste F5 drücken, um die Datei zu
+            kompilieren und auszuführen.
+
+            >>> BILD
+
+            
+        <h2>Das Hallo-Welt-Programm</h2>
+        <h2>Kommentare</h2>
+        <h2>Datentypen in Python</h2>
+        <h2>Auswertungsreihenfolge der Operatoren</h2>
+        <h2>Rechnen mit Python</h2>
+        <h2>Strings</h2>
+            <h3>Formatierte Ausgabe</h3>
+                <h4>Mit .format()</h4>
+                <h4>Mit f-String</h4>
+        <h2>Benutzereingaben</h2>
+        <h2>Datenstrukturen</h2>
+            <h3>Listen</h3>
+                <h4>Erstellen von Listen</h4>
+                <h4>Zugriff auf Elemente</h4>
+                <h4>Verketten von Listen</h4>
+                <h4>Slicing</h4>
+                <h4>Mehrdimensionale Listen</h4>
+                <h4>Vergleichen von Listen</h4> 
+                <h4>Einfügen und Löschen von Elementen</h4>
+                <h4>Sortieren von Listen</h4> 
+                <h4>Zuweisung einer Liste</h4>
+                <h4>Tabelle: Listen-Methoden</h4>
+            <h3>Dictionaries</h3>
+                <h4>Erstellen von Dictionaries</h4>
+                <h4>Zugriff auf Elemente</h4>
+                <h4>Schlüsselwerte ermitteln</h4>
+                <h4>Werte ermitteln</h4>
+                <h4>Einfügen neuer Schlüssel-/Wertepaare</h4>
+                <h4>Löschen von Einträgen</h4>
+                <h4>Verwendung von defaultdict</h4>
+                <h4>Tabelle: Dictionary-Methoden</h4>
+            <h3>Tupel</h3>
+                <h4>Erstellen von Tupeln</h4>
+                <h4>Zugriff auf Elemente</h4>
+                <h4>Unpacking </h4>
+                <h4> Der * - Operator</h4>
+                <h4>Bestehendes Tupel erweitern (neues Tupel-Objekt)</h4>
+                <h4>Tabelle: Tupel-Methoden</h4>
+            <h3>Mengen (Sets)</h3>
+                <h4>Erstellen von Sets</h4>
+                <h4>Hinzufügen und Ändern von Elementen</h4>
+                <h4>Löschen von Elementen</h4>
+                <h4>Vereinigungsmenge</h4>
+                <h4>Schnittmenge</h4>
+                <h4>Differenzmenge</h4>
+                <h4>Tabelle: Set-Methoden</h4>
+        <h2>Vergleichen mit == und is</h2>
+        <h2>Kontrollstrukturen</h2>
+            <h3>Verzweigungen mit if</h3>
+            <h3>Mehrfachauswahl</h3>
+            <h3>Kopfgesteuerte Schleife mit while</h3>
+            <h3>Kopfgesteuerte Schleife mit for</h3>
+            <h3>Verwendung von zip</h3>
+        <h2>List Comprehensions</h2>
+        <h2>Funktionen</h2>
+            <h3>Argumentübergabe an Funktionen</h3>
+            <h3>Variable Argumentenliste</h3>
+            <h3>Variable Anzahl an Argumenten </h3>
+            <h3>Funktionen in eine Datei auslagern </h3>
+            <h3>Lambda-Funktionen</h3>
+        <h2>Python Standardbibliothek</h2>
+        <h2>Zufallszahlen</h2>
+            <h3>Generieren von (Pseudo-) Zufallszahlen </h3>
+            <h3>Zufallswahl aus einer Population</h3>
+        <h2>Objektorientierung: Erstellen von Klassen</h2>
+            <h3>Kapselung</h3>
+            <h3>Getter und Setter</h3>
+            <h3>Ableiten einer Klasse </h3>
+            <h3>Statische Variablen</h3>
+            <h3>Statische Methoden </h3>
+            <h3>Klassenmethoden</h3>
+        <h2>Fehlerbehandlung</h2>
+        <h2>Dateien lesen und schreiben</h2>
+        <h2>Verwendung der SQLite-Datenbank</h2>
+        <h2>Grafische Benutzeroberflächen mit Tkinter</h2>
+            <h3>Verwendung von ttk</h3>
+        <h2>Projekt: Wetter-App</h2>
+            <h3>Zugriff auf die API</h3>
+            <h3>Erstellen der GUI</h3>
+            <h3>Erstellen einer ausführbaren Datei</h3>
+        <h2>Hilfe in Python mit PyDoc</h2>
+            <h3>PyDoc als Referenzdokumentation </h3>
+        <h2>The ZEN of Python</h2>
+        <h2>Empfohlene Literatur</h2>
+
+
         <script src="" async defer></script>
     </body>
 </html>
